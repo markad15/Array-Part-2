@@ -10,7 +10,8 @@ function arraysort()
 }
 
 
-var numSortArray =  [1,2,4,5,11,12,22,23,31];
+var numSortArray =  [1,2,4,5,11,12,22,23,31,55];
+
 function ascendingSort()
 {
     numSortArray.sort(function(num1,num2){return num1 - num2});
@@ -38,12 +39,19 @@ function callsortfilter()
 
 function greaternumFilter(numMax)
 {
-    return numMax > 50;
+    if (numMax > 50)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    } 
 }
 
 function callGreaterNumber() 
 {
-    document.getElementById("filterevenpid").innerHTML = numSortArray.filter(greaternumFilter);
+    document.getElementById("greaternumpid").innerHTML = numSortArray.filter(greaternumFilter);
 }
 
 
