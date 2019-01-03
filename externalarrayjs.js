@@ -55,7 +55,7 @@ function callGreaterNumber()
 
 function calldatetime()
 {
-    var datetime = new date();
+    var datetime = new Date();
     document.getElementById("datetimepid").innerHTML = datetime;
 }
 
