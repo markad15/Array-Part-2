@@ -10,7 +10,7 @@ function arraysort()
 }
 
 
-var numSortArray =  [1,2,4,5,11,12,22,23,31,55];
+var numSortArray =  [1,2,4,5,11,12,22,23,31];
 
 function ascendingSort()
 {
@@ -37,21 +37,26 @@ function callsortfilter()
     document.getElementById("filterevenpid").innerHTML = numSortArray.filter(sortfilterarray);
 }
 
-function greaternumFilter(numMax)
+function callGreaterNumber()
 {
-    if (numMax > 50)
+    for (var i=0;i<numSortArray.length;i++)
     {
-        return true;
+        if(numSortArray[i] > 50) 
+        { 
+            document.getElementById("greaternumpid").innerHTML = "Number greater than 50 is found"; 
+        }
+        else
+        {
+            document.getElementById("greaternumpid").innerHTML = "Number greater than 50 is not found";
+        }
     }
-    else
-    {
-        return false;
-    } 
+    
 }
 
-function callGreaterNumber() 
+function calldatetime()
 {
-    document.getElementById("greaternumpid").innerHTML = numSortArray.filter(greaternumFilter);
+    var datetime = new date();
+    document.getElementById("datetimepid").innerHTML = datetime;
 }
 
 
