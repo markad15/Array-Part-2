@@ -36,4 +36,14 @@ function callsortfilter()
     document.getElementById("filterevenpid").innerHTML = numSortArray.filter(sortfilterarray);
 }
 
+function greaternumFilter(numMax)
+{
+    return numMax > 50;
+}
+
+function callGreaterNumber() 
+{
+    document.getElementById("filterevenpid").innerHTML = numSortArray.filter(greaternumFilter);
+}
+
 
