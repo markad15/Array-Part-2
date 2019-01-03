@@ -11,10 +11,29 @@ function arraysort()
 
 
 var numSortArray =  [1,2,4,5,11,12,22,23,31];
-function ascdescSort()
+function ascendingSort()
 {
     numSortArray.sort(function(num1,num2){return num1 - num2});
-    document.getElementById("ascdescsortpid").innerHTML = numSortArray;
+    document.getElementById("ascsortpid").innerHTML = numSortArray;
+}
+function descendingSort()
+{
+    numSortArray.sort(function(num1,num2){return num2 - num1});
+    document.getElementById("descsortpid").innerHTML = numSortArray;
+}
+
+function sortfilterarray(arrayelement)
+{
+    var evenArrayFilter = [];
+    if(arrayelement % 2 === 0) 
+    { 
+        return evenArrayFilter.push(arrayelement);   
+    }
+}
+
+function callsortfilter() 
+{
+    document.getElementById("filterevenpid").innerHTML = numSortArray.filter(sortfilterarray);
 }
 
 
