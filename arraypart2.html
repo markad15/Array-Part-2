@@ -9,7 +9,7 @@
         <h3>1. Odd / Even Values [1,2,3,4,5,6,7,8,9,10,12,14]</h3>
         <p id="oddevenpid"></p>
         <br>
-        <button onclick="numArray.reduce(funOddEven)">Submit</button>
+        <button onclick="callOddEvenFun()">Submit</button>
 
         <br><br>
         <h3>2.	Sort array [“Apple”,”Grapes”, “Mango”,”Banana”,”Pineapple”,”goava”] </h3>
@@ -53,6 +53,83 @@
         <br>
         <button onclick="calldatetime()">Date Time</button> 
 
+        <br><br>
+        <h3>9.	Find max value from [1,2,4,5,11,12,22,23,31]</h3>
+        <p id="maxValuePid"></p>
+        <br>
+        <button onclick="funmaxnumber()">Max Number</button> 
+
+        <br><br>
+        <h3>10.	Find min values from [1,2,4,5,11,12,22,23,31]</h3>
+        <p id="minValuePid"></p>
+        <br>
+        <button onclick="funminnumber()">Min Number</button> 
+
+        <br><br>
+        <h3>11.	What is use of Random function , write code to get random values from 0 to 9;</h3>
+        <br> Answer: Random is math object method to generate random number from 0 but excluding 1.
+        <p id="rndpid"></p>
+        <br>
+        <button onclick="funrandomnum()">Random Number</button> 
+
+
+        <br><br>
+        <h3>12. What is ceil and floor function and what is use of them. </h3>
+        Answer: Ceil is math object method which round Upwards to nearest interger and return same.
+        floor is math object method which round Downwards to nearest interger and return same.
+        We can use both methods when we need to Round any number to Upwards/Downwards interger.
+
+        <br><br>
+        <h3>13.	What is round and how it is different from ceil and floor. </h3>
+        Answer: round is math object method which round to  its nearest interger and return same.
+        For example - If fraction value is greater than or equal to 0.5 then it round to it's Upwards nearest integer 
+        and it fraction value is less than 0.5 then it round to it's Downwards nearest integer. 
+        
+        <br><br>
+        <h3>14. What will be output for below codes and give reason for output</h3>
+           
+        1.	1 + “2” + “2” = "122"
+        Reason: "2" is a string and have operator + which act like concatenation. hence, "122" string;<br>
+        2.	1+2+3 +”4” = "64"
+        Reason: (1+2+3) is interger values and will add up and return 6. However, "4" is string, so concatenation will happen and return "6" + "4" = "64"<br>
+        3.	“4” + true = "4true"
+        Reason: :"4" is string. So true will converted as string and will return "4true" string.<br> 
+        4.	“True” + true = "Truetrue"
+        Reason: "True" is string. So true will converted as string and will return "Truetrue" string.<br>
+        5.	1 + true = 2
+        Reason: 1 is interger value and true holds as 1. So 1 + 1 will return 2.<br>
+        6.	2 + false = 2
+        Reason: 2 is interger value and false holds as 0. So 2 + 0 will return 2.<br>
+        7.	"4" * true = 4
+        Reason: Due to multiplication operator 4 will get converted to interger and true is 1. So 4 * 1 = 4 <br>
+        8.	4 * “Af” = NaN
+        Reason: "Af" is not a number and not a boolean value. Also, there is multiplication operator. Hence, no operation will happen. <br>
+        9.	"4" * "A" = NaN
+        Reason: "A" is not a number and not a boolean value. Also, there is multiplication operator. Hence, no operation will happen. <br>
+        10.	 “4”*”4” = 16
+        Reason: Due to multiplication operator both string "4" will get converted to integer and multiplication will happen.<br>
+        11.	4 + "4A" +10 =  "44A10"
+        Reason: "4A" is string and have + operator due to which 4 & 10 will get converted to strings and return it.<br>
+        12.	4 + "4" * 10 = 44
+        Reason: First multiplication operation will happen where "4" is getting converted to integer and return 40. After that addition will happen 4 + 40.<br>
+        13.	4 + "4A" * 10 = NaN
+        Reason: First multiplication operation will happen. However, "4A" is not number or not boolean. So not operation will happen and return NaN.<br>
+        14.	4 + "true" * 10 = NaN
+        Reason: First multiplication operation will happen. However, "true" is not number or not boolean. So not operation will happen and return NaN.<br>
+        15.	true *80 = 80
+        Reason: true is boolen value which hold 1. So multiplication will happen 1 * 80 = 80<br>
+        16.	1 +2+ 3+ "ad" = "6ad"
+        Reason: First addition of (1 +2+ 3) will happen and return 6. However, "ad" is string and have + operator. So it covert 6 to string "6" and concatenation is happen.<br>
+        17.	"1" +2+ 3 = "123"
+        Reason: "1" is string and have + operator which converts 2,3 to string and return "123" string.<br> 
+        18.	"1" *2+ 3+8*"true" = NaN
+        Reason: "true" is not a number. Hence, no operation will happen and return NaN.
+        19.	true*0 + "false" = "0false"
+        Reason: First multiplication will happen. So true is 1 * 0 and return 0. "false" is string and have + operator. So it will concatenate "0" + "false".<br>
+        20.	1 *2+ 3+8+"true" = "13true"
+        Reason: First 1*2 will happen and then it will add up to 3+8 = 13. Now, "true" is string and have + operator, due to which concatenation will happen.<br>
+        21.	1 *null + true+10 + "10" = "1110"
+        Reason: First 1*null execute. However, anything multiple with null is zero. After 0 + true = 1. Then 1 + 10 = 11. "10" is string and + operator due to which concatenation will happen between 11 & "10" = "1110". 
 
 
         <script src="./externalarrayjs.js"></script>
