@@ -1,6 +1,36 @@
 
 var numArray = [1,2,3,4,5,6,7,8,9,10,12,14];
 
+function funOddEven(total, number1)
+{
+    var oddarray1 = [];
+    var evenarray1 = [];
+    var flagnum = 0
+    if (total % 2 == 0 && flagnum == 0)
+    {
+        evenarray1.push(total);
+        flagnum = 1;
+    }
+    if (total % 2 != 0 && flagnum == 0)
+    {
+        oddarray1.push(total);
+    }
+    if (number1 % 2 == 0)
+    {
+        evenarray1.push(number1);
+    }
+    if (number1 % 2 != 0)
+    {
+        oddarray1.push(number1);
+    }
+    
+    return "Even Numbers:" + evenarray1 + "<br/>Odd Numbers:" + oddarray1;
+}
+
+function callOddEvenFun(item1)
+{
+    document.getElementById("oddevenpid").innerHTML = numArray.reduce(funOddEven);
+}
 
 var fruits =  ["Apple","Grapes", "Mango","Banana","Pineapple","goava"];
 function arraysort()
